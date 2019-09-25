@@ -5,9 +5,9 @@ Hello everyone this is a simple love percentage calculator webapp.
 
 How it works:
 
-first it will ask you to enter your name and then a new screen will appear now you have to put a name that you want to see how much they love you
-
-and it will tell in percentages
+first it will ask you to enter your name and then a new screen will appear.
+now you have to put the name of person that you want to see how much he/she love's you
+and it will tell you in percentages
 
 i used https://rapidapi.com/ajith/api/love-calculator api for that.
 
