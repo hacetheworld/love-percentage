@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    min-height: 100vh;
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+
+}
+
+nav {
+    max-width: 100rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav__list {
+    margin: 1.6rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.nav__link:hover,
+.nav__link:active {
+    color: rgb(93, 9, 141);
+
+}
+
+.logo {
+    height: 7rem;
+}
+
+
+/*
+* container
+ */
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user {
+    text-align: center;
+
+}
+
+.headline {
+    font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+    font-weight: 300;
+    color: rgb(99, 6, 122);
+    margin: 0;
+    padding: 0;
+
+}
+
+.user__img {
+    border-radius: 50%;
+    margin: 1rem 0 2rem 0;
+}
+
+.tagline {
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.input-box {
+
+    display: flex;
+
+    flex-direction: column;
+    min-height: 10rem;
+    justify-content: space-between;
+    width: 18%;
+    align-items: center;
+
+
+}
+
+.input {
+    padding: .5rem .2rem;
+    min-height: 4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 1px;
+    border: none;
+    background-color: rgb(247, 245, 245);
+}
+
+.input::placeholder {
+    font-family: 'Lato';
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: rgb(141, 138, 138);
+}
+
+.submitBtn {
+    align-self: center;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    background-color: rgb(116, 12, 201);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#results {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(104, 37, 104);
+
+
+}
+
+#results h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+
+}
+
+#results .message {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#results .message span {
+    font-weight: 700;
+    font-size: 3rem;
+    color: black;
+}
+
+/**
+About page Style
+*/
+
+.about {
+    height: 100%;
+    width: 75%;
+    margin: 10rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about .description {
+    font-size: 1.6rem;
+
+}
+
+.social {
+    margin-top: 4rem;
+}
+
+.social p {
+    font-size: 1.5rem;
+}
+
+.social a {
+    text-decoration: none;
+
+}
+
+.social-icon {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icon a {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+
+/* Popup */
+#popup {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(72, 8, 109);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.userInput-box {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+
+.userInput-box .username {
+    display: block;
+    margin: 3rem auto;
+    margin-bottom: 2rem;
+    padding: .5rem .5rem;
+    height: 5rem;
+    width: 30%;
+    border: none;
+    background-color: rgb(253, 252, 252);
+    color: rgb(82, 80, 80);
+    font-size: 1.8rem;
+}
+
+
+
+.username::placeholder {
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: rgb(163, 159, 159);
+}
+
+.userInput-box button {
+    align-self: center;
+    font-size: 1.7rem;
+    padding: 1.5rem 2rem;
+    background-color: rgb(116, 12, 201);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/****************************** Responsive ****************************/
+
+@media(max-width:90rem) {
+    .input-box {
+        width: 20%;
+    }
+}
+
+
+@media(max-width:75rem) {
+    .input-box {
+        width: 25%;
+    }
+}
+
+
+@media(max-width:65rem) {
+    .input-box {
+        width: 30%;
+    }
+
+
+}
+
+@media(max-width:50rem) {
+    .input-box {
+        width: 45%;
+    }
+
+    .userInput-box .username {
+        width: 55%;
+    }
+
+    nav {
+        flex-direction: column;
+
+    }
+}
